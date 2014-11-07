@@ -2,7 +2,10 @@
 <resources>
 
     <string name="app_name">InclineMeasure</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="header_text">Angle of Incline:</string>
     <string name="action_settings">Settings</string>
+    <string name="pitch">X axis (pitch):</string>
+    <string name="roll">Y axis (roll):</string>
+    <string name="azimuth">Z axis (azimuth):</string>
 
 </resources>

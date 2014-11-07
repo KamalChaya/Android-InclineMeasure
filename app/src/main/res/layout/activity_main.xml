@@ -9,8 +9,36 @@
     tools:context="cs496.KamalChaya.inclinemeasure.app.MainActivity">
 
     <TextView
-        android:text="@string/hello_world"
+        android:id="@+id/header"
+        android:text="@string/header_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+    
+    <TextView
+        android:id="@+id/pitch"
+        android:text="@string/pitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"/>
+    
+    <TextView
+        android:id="@+id/roll"
+        android:text="@string/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pitch"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="31dp"/>
+
+    <TextView
+        android:id="@+id/azimuth"
+        android:text="@string/azimuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roll"
+        android:layout_marginTop="10dp"/>
 
 </RelativeLayout>
