@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"/>
-    
+
     <TextView
         android:id="@+id/pitch"
         android:text="@string/pitch"
@@ -23,6 +23,16 @@
         android:layout_below="@id/header"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/pitchValue"
+        android:text="@string/noValue"
+        android:layout_below="@id/header"
+        android:layout_toRightOf="@id/pitch"
+        android:layout_alignTop="@id/pitch"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     
     <TextView
         android:id="@+id/roll"
@@ -34,11 +44,31 @@
         android:layout_marginLeft="31dp"/>
 
     <TextView
+        android:id="@+id/rollValue"
+        android:text="@string/noValue"
+        android:layout_below="@id/header"
+        android:layout_toRightOf="@id/roll"
+        android:layout_alignTop="@id/roll"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
         android:id="@+id/azimuth"
         android:text="@string/azimuth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/roll"
         android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/azimuthValue"
+        android:text="@string/noValue"
+        android:layout_below="@id/header"
+        android:layout_toRightOf="@id/azimuth"
+        android:layout_alignTop="@id/azimuth"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

@@ -7,5 +7,6 @@
     <string name="pitch">X axis (pitch):</string>
     <string name="roll">Y axis (roll):</string>
     <string name="azimuth">Z axis (azimuth):</string>
+    <string name="noValue">----</string>
 
 </resources>
