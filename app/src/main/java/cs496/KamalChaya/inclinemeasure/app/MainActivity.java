@@ -44,6 +44,9 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
      */
     TextView xValue, yValue, zValue;
 
+    //String to hold the unicode degree symbol
+    String degreeSymbol = "\00B0";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,9 +113,9 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
                     z = 360 - Math.abs(z);
                 }
 
-                xValue.setText(Float.toString(x));
-                yValue.setText(Float.toString(y));
-                zValue.setText(Float.toString(z));
+                xValue.setText(Float.toString(x) + " \u00B0");
+                yValue.setText(Float.toString(y) + " \u00B0");
+                zValue.setText(Float.toString(z) + " \u00B0");
             }
         }
     }
