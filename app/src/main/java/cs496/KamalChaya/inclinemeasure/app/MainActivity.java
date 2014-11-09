@@ -90,6 +90,26 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
                 x = (float) Math.toDegrees(orientation[1]);
                 y = (float) Math.toDegrees(orientation[2]);
 
+                /*
+                    I want the angles to be shown with respect
+                    to the positive axis, so I need to do a little math here.
+
+                    If the angle is negative, I will take the absolute value of it
+                    and subtract it from 360. This way, it shows the equivalent angle
+                    measured
+                 */
+                if (x < 0) {
+                    x = 360 - Math.abs(x);
+                }
+
+                if (y < 0) {
+                    y = 360 - Math.abs(y);
+                }
+
+                if (z < 0) {
+                    z = 360 - Math.abs(z);
+                }
+
                 xValue.setText(Float.toString(x));
                 yValue.setText(Float.toString(y));
                 zValue.setText(Float.toString(z));
